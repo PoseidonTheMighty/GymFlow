@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}body {
+    font-family: Roobert, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: beige;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* nav bar */
+nav {
+    position: sticky;
+    top: 10px;
+    border: 1px solid #e0e0e024;
+    backdrop-filter: blur(7px);
+    background-color: rgba(36, 36, 36, 0.7);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1408px;
+    height: auto;
+    min-height: 66px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1000;
+}
+.wrapper a {
+    color: #a4a4a4;
+    padding: 9px 11px;
+    font-size: 17px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav_but_profile{
+    position: relative;
+    left: 370px;
+    margin-top: 2px;
+    background-color: transparent;
+    border: 0px solid;
+  }
+  
+  .nav_but_profile:hover{
+    cursor: pointer;
+  }
+  
+  .nav_but_profile img{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* CSS for the dropdown menu */
+  .dropdown-content-profile {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the button */
+    left: 1150px;
+    margin-top: 5px; /* Add some margin to the top */
+  }
+  
+  .dropdown-content-profile a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content-profile a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .nav_but_profile:hover .dropdown-content-profile {
+    display: block; /* Display the dropdown content when the profile button is hovered */
+  }
+  
+  .nav_but_cart{
+    position: relative;
+    left: 420px;
+    margin-top: 2px;
+    background-color: transparent;
+    border: 0px solid;
+  }
+  
+  .nav_but_cart:hover{
+    cursor: pointer;
+  }
+  
+  .nav_but_cart img{
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+  }
+
+
+.link_home {
+    position: absolute;
+    left: 0;
+    padding: 5%;
+    color: white;
+    font-size: 40px;
+    font-family: 'Smooch','cursive';
+    text-decoration: none;
+}
+
+.wrapper a:hover {
+    background-color: #575757;
+    border-radius: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    z-index: 900;
+}
+
+.dropdown-content {
+    background: #ddd;
+    min-width: 100%;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown-content a {
+    grid-column-gap: 13px;
+    grid-row-gap: 0px;
+    border-radius: 11px;
+    grid-template: ".Area" / max-content 1fr;
+    grid-auto-columns: 1fr;
+    align-items: flex-start;
+    padding: 18px;
+    text-decoration: none;
+    display: grid;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    border: 1px none #a4a4a4;
+    background-color: #202020;
+    border-radius: 15px;
+    width: 352px;
+    padding: 5px;
+    box-shadow: 0 9px 33px #000;
+}
+
+.demo {
+    position: absolute;
+    right: 0;
+    padding: 1.5%;
+}
+
+.demo .but_demo {
+    background-color: #74bcb9ba;
+    color: white;
+    padding: 11px 22px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 9px;
+    box-shadow: inset 0 3px 3px -1px #ffffff5c;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+/* imagine iniziale */
+#privacy_immage {
+    margin-top: -6%;
+    background-image: url(media/Privacy.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    margin-bottom: 6%;
+}
+#termini_immage {
+    margin-top: -6%;
+    background-image: url(media/Termini_Condizioni.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100vh;
+    margin-bottom: 6%;
+}
+
+/* #Title_privacy {
+    text-align: center;
+    font-size: 300%;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    margin: 0 auto;
+    width: fit-content;
+    align-self: center;
+    font-weight: bold;
+} */
+
+/* Zoom su div.paragraph */
+.paragraph {
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: transform 0.3s ease, margin 0.3s ease;
+}
+
+.paragraph:hover {
+    transform: scale(1.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Stili per h2, p, ul all'interno di .paragraph */
+.paragraph h2 {
+    color: #353535;
+    margin-top: 4%;
+    margin-bottom: 1%;
+}
+
+.paragraph p,
+.paragraph ul {
+    color: #585858;
+}
+
+/* fotter */
+footer{
+    position: relative;
+    bottom: 0px;
+    margin-top: 200px;
+  }
+
+  .container-footer {
+      max-width: 1170px;
+      margin:auto;
+  }
+
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .footer ul{
+      list-style: none;
+  }
+  .footer{
+    background-color: #000000;
+    padding: 50px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      background-color: #ffffff;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }

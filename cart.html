@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <link rel="stylesheet" href="cart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <a class="link_home" href="home.html">GymFlow</a>
+        <div class="wrapper">
+            <a class="a_links" href="clienti.html">Clienti</a>
+            <!-- <div class="dropdown">
+                <a class="a_links" href="home.html">Risorse</a>
+                <div class="dropdown-content">
+                    <a href="risorse/blog.html">Blog</a>
+                    <a href="risorse/podcast.html">Podcast</a>
+                    <a href="risorse/customer.html">Customer Service Unlocked</a>
+                </div>
+            </div> -->
+            <a class="a_links" href="webinar.html">Webinar</a>
+            <div class="dropdown">
+                <div class="dropdown-content">
+                    <a href="e-commerce/ciabatte.html">Scopri il nostro piano</a>
+                    <a href="Login/login.html">Accedi alla piattaforma</a>
+                </div>
+            </div>
+            <a class="a_links" href="shop.html">Shoop</a>
+        </div>
+
+        <a class="demo" id="demo" href="flow.html">
+            <button class="but_demo" id="demo">Prova una Demo</button>
+        </a>
+
+        <a href="#">
+            <span></span>
+            <button id="profile" class="nav_but_profile">
+                <img src="media/pngwing.com (5).png" alt="buttonpng"/>
+            </button>
+            <!-- Dropdown menu -->
+            <div class="dropdown-content-profile" id="profileDropdown">
+                <a href="profile.html">Profile</a>
+                <a id="logout" href="#">Logout</a>
+            </div>
+        </a>
+        
+        <a href="cart.html">
+            <span></span>
+            <button id="cart" class="nav_but_cart">
+                <img src="media/klipartz.com.png" alt="buttonpng"/>
+            </button>
+        </a>
+    </nav>
+
+
+    <div class="cart-wrapper" id="cart-container">
+        
+        <div id="cart-actions">
+            <button class="button" id="back-to-shop" onclick="window.location.href='shop.html'">Torna allo shop</button>
+            <p id="total-price">Totale: €0</p> <!-- Prezzo totale -->
+            <button class="button" id="checkout" onclick="deleteCar()">Procedi con l'acquisto</button>
+        </div>
+        
+        <div id="cart-items"></div>
+    </div>
+<!-- footer -->
+<footer class="footer">
+    <div class="container-footer">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Info</h4>
+                <ul>
+                    <li><a href="#">chi siamo</a></li>
+                    <li><a href="#">servizi</a></li>
+                    <li><a href="Privacy.html">privacy policy</a></li>
+                    <li><a href="Termini e condizioni.html">Termini e condizioni</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Link Utili</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">ordini</a></li>
+                    <li><a href="#">resi</a></li>
+                    <li><a href="#">rintracciamento ordini</a></li>
+                    <li><a href="#">pagamenti</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>shop online</h4>
+                <ul>
+                    <li><a href="shop.html">Atrezzatura</a></li>
+                    <li><a href="shop.html">Integrazione</a></li>
+                    <li><a href="shop.html">Steroidi</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Seguici</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="script.js" defer></script>
+<script src="cart.js"></script>
+</body>
+</html>

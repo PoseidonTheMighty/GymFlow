@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+.wrapper {
+    width: 600px;
+    min-width: 300px; /* Set a minimum width to avoid collapsing the form */
+    height: auto; /* Changed height to auto to accommodate varying content */
+    color: black;
+    border-radius: 4%;
+    border-style: solid;
+    border: 1px solid transparent;
+    border-color: grey;
+    padding: 30px 40px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.email-box {
+    padding-top: 4%;
+}
+
+.email-box input {
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-style: solid;
+    border: 1px solid transparent;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px 45px 10px 10px;
+}
+
+
+.username-box {
+    padding-top: 4%;
+}
+
+.username-box input {
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-style: solid;
+    border: 1px solid transparent;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px 45px 10px 10px;
+}
+
+.name-box {
+    padding-top: 4%;
+}
+
+.name-box input {
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-style: solid;
+    border: 1px solid transparent;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px 45px 10px 10px;
+}
+
+.surname-box {
+    padding-top: 4%;
+}
+
+.surname-box input {
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-style: solid;
+    border: 1px solid transparent;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px 45px 10px 10px;
+}
+
+.date-box {
+    padding-top: 4%;
+}
+
+.date-box input {
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-style: solid;
+    border: 1px solid transparent;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px 45px 10px 10px;
+}
+
+.password-box {
+    padding-top: 4%;
+}
+
+.password-box input {
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-style: solid;
+    border: 1px solid transparent;
+    border-color: grey;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 10px 45px 10px 10px;
+}
+
+
+/* Apply custom styles for gender-box */
+.gender-box {
+    display: flex;
+    flex-direction: column; /* Changed to column to stack the choices vertically */
+    margin-bottom: 9px; /* Decreased the spacing between gender and choices */
+    padding-top: 4%;
+}
+
+.gender-box label {
+    margin-bottom: 1px;
+}
+
+.gender-box input[type="radio"] {
+    margin-right: 4px;
+    margin-left: 3px;
+}
+
+/* Center the choices horizontally */
+.gender-box .choices {
+    display: flex;
+    justify-content: center;
+    margin-top: -14px;
+}
+
+.btn {
+    padding-left: 28%;
+}
+
+/* Center the buttons */
+.btn button {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 230px; /* Added to make the button take the full width */
+    height: 35px;
+    background-color: #000000;
+    outline: none;
+    border: none;
+    border-style: hidden;
+    box-shadow: 0 0 10px rgba(f,f,f, .1);
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.links {
+    padding-left: 20%;
+    padding-top: 3%;
+}
+
+.links a {
+    color: grey;
+    font-size: 18px;
+}
