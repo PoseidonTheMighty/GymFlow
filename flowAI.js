@@ -11,7 +11,7 @@ let chatHistory = [];
 let workoutPlanMode = false; // Modalità per la scheda di allenamento
 
 // API Configuration
-const API_KEY = "AIzaSyDGP_RtqA7i5lvdyqZ14WTaFGN3RJbLHsk"; // Inserisci la tua chiave API
+const API_KEY = "YOUR_API"; // Inserisci la tua chiave API
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-pro:generateContent?key=${API_KEY}`;
 
 // Funzione per creare un elemento di messaggio

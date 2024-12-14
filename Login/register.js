@@ -3,12 +3,12 @@ import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAYpI8kcMcVgycLz9kcBAPZffwiLywNSPY",
-  authDomain: "gymflow-caa4b.firebaseapp.com",
-  projectId: "gymflow-caa4b",
-  storageBucket: "gymflow-caa4b.appspot.com",  // Corrected URL
-  messagingSenderId: "103620875668",
-  appId: "1:103620875668:web:3326d9f9f41cc8939c2b81"
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
 };
 
 // Initialize Firebase
